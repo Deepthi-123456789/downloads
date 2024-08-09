@@ -10,3 +10,38 @@ for notgateway e have a rule to create elastic ip.
 **natgateway is keept inside public subnet and for private and database routable is attached to natgateway.
 nategateway is only outgoing traffic.
 VPC PEERING
+-------------------
+decided by user
+*required --
+==they have to give peering  vpc id
+== if they  have not given peering  vpc id ,we will consider default vpc id
+requester- roboshop
+accepter - user provided vps or default
+
+
+
+
+to creat subnet requrments-
+-------------------------------------------
+subnet name
+vpc id
+availability zone
+cdir range
+
+to create route table-
+-----------------------------------
+name
+vpc id
+
+for route table assiassion with subnet-
+---------------------------------------------------------
+rout table id
+
+and need to add routes to route table only for public route table because only public route table is directly connected with internet gateway.
+
+NATgateway requirments-
+----------
+nat gateway should be placed in public subnet only 
+name
+public subnet id
+elastic ip id
