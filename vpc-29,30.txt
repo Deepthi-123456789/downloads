@@ -1,0 +1,12 @@
+VPC- virtual private network(isolated network inside aws)
+ difference between public and private subnet- subnet which as route to the internet gatway is public and subnet which don't have route to the internetgatway is private subnet
+**only public route tables are attached with internet gateway 
+CIDR-classless inter domain routing
+ipv4-192.168.1.1--4octates (32 bits)
+ip address= network +server
+NATgateway
+it is created inside public subnet,because it has internet connection,then e add it in route tables.
+for notgateway e have a rule to create elastic ip.
+**natgateway is keept inside public subnet and for private and database routable is attached to natgateway.
+nategateway is only outgoing traffic.
+VPC PEERING
